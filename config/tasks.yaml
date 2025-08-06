@@ -1,0 +1,34 @@
+code_analysis:
+  description: >
+    Analyze the input codebase and extract all relevant information such as 
+    class names, function definitions, method signatures, dependencies, and 
+    data models.
+    Code to Analyze: {input_code}
+  expected_output: >
+    Structured metadata representing code architecture including functions, 
+    classes, modules, and their relationships.
+
+tdd_generation:
+  description: >
+    Generate a markdown-based Technical Design Document using the extracted 
+    metadata from the input codebase. Include major sections like Purpose, 
+    Components, Data Models, APIs, and Dependencies.
+  expected_output: >
+    A complete Technical Design Document in markdown format that accurately 
+    represents the analyzed code structure.
+
+tdd_save:
+  description: >
+    Save the generated TDD to a local file using the appropriate file tools.
+  expected_output: >
+    A saved file named 'TDD_Document.md' containing the full Technical Design 
+    Document content in markdown format.
+
+code_generation:
+  description: >
+    Generate equivalent code in the target programming language based on the 
+    Technical Design Document, preserving logic, structure, and naming conventions.
+    Language of the generated code: {target_language}
+  expected_output: >
+    Idiomatic and syntactically correct source code written in the selected 
+    target language.
